@@ -1,97 +1,124 @@
-# 🌸 Amogh Enterprises Website
+🚀 Responsive Product Catalog Interface
 
-## Premium Plumbing & Gardening Solutions
+Overview
 
-Amogh Enterprises Website is a responsive business website developed to showcase plumbing products, gardening products, and SP Home Products. The website provides an attractive product catalog, product detail pages, and customer inquiry integration through WhatsApp.
+Responsive Product Catalog Interface is a front-end web development project built using HTML, CSS, and JavaScript.
 
----
-
-## 📸 Project Screenshots
-
-### Home Page
-
-![Home Page](screenshots/home-page.png)
-
-### About Section
-
-![About Section](screenshots/about-section.png)
-
-### Products Section
-
-![Products Section](screenshots/products-page.png)
-
-### Product Details Page
-
-![Product Details](screenshots/product-details.png)
+The project demonstrates responsive web design principles, product catalog presentation, product detail views, dynamic quantity selection, price calculation functionality, and customer inquiry integration. It was developed to gain practical experience in building modern user interfaces and real-world business-oriented web applications.
 
 ---
 
-## ✨ Features
+📸 Project Screenshots
 
-- Modern Dark Theme UI
-- Responsive Design
-- Product Catalog
-- Product Detail Pages
-- Dynamic Quantity Selection
-- Dynamic Price Calculation
-- WhatsApp Inquiry Integration
-- Business Information Section
-- Product Categories Navigation
-- Interactive Buttons & Hover Effects
+Home Page
+
+"Home Page" (screenshots/home-page.png)
+
+Product Catalog
+
+"Product Catalog" (screenshots/products-page.png)
+
+Product Details
+
+"Product Details" (screenshots/product-details.png)
+
+Order Interface
+
+"Order Interface" (screenshots/order-page.png)
 
 ---
 
-## 🛠️ Technologies Used
+✨ Features
 
-- HTML5
-- CSS3
+- Responsive user interface
+- Multi-page website architecture
+- Product catalog display
+- Product detail pages
+- Dynamic quantity selection
+- Dynamic price calculation
+- WhatsApp inquiry integration
+- Mobile-friendly design
+- Interactive navigation system
+- Clean and modern UI/UX
+
+---
+
+🛠️ Technologies Used
+
+- HTML
+- CSS
 - JavaScript
 - Git
 - GitHub
 
 ---
 
-## 📂 Project Structure
+📚 Key Concepts Implemented
 
-```text
-Amogh_Enterprises
+- Responsive Web Design
+- DOM Manipulation
+- Event Handling
+- Multi-Page Navigation
+- User Interaction Design
+- Front-End Development Best Practices
+- UI/UX Design Principles
+
+---
+
+📂 Project Structure
+
+Responsive-Product-Catalog-Interface
 │
-├── images
-│   └── products
+├── images/
 │
-├── screenshots
+├── screenshots/
 │
 ├── index.html
-├── sp-homes.html
 ├── flower-pot.html
+├── sp-homes.html
 ├── order.html
+│
+├── style.css
+├── script.js
+│
 └── README.md
-```
 
-## 🚀 Future Enhancements
+---
+
+🎯 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+- Developing responsive web interfaces
+- Creating structured product catalog layouts
+- Implementing dynamic user interactions using JavaScript
+- Designing user-friendly navigation flows
+- Managing project versions using Git and GitHub
+- Building real-world business-oriented web solutions
+
+---
+
+🚀 Future Enhancements
 
 - Product Search Functionality
-- Shopping Cart
+- Product Filtering & Sorting
+- Shopping Cart System
+- Backend Integration
+- Database Connectivity
+- User Authentication
 - Admin Dashboard
-- Inventory Management
-- Product Database Integration
-- Order Tracking
-- Online Payment Integration
+- Order Management System
 
 ---
 
-## 📌 Project Status
+👩‍💻 Developer
 
-🚧 Currently Under Development
+Mrunali Oza
 
----
-
-## 👩‍💻 Developer
-
-**Mrunali Oza**
-
-GitHub: https://github.com/MrunaliOza04/Amogh-Enterprises-Website
+GitHub: https://github.com/MrunaliOza04
 
 LinkedIn: https://www.linkedin.com/in/mrunali-oza04
 
 ---
+
+⭐ This project was developed as part of my web development portfolio to strengthen practical front-end development skills and demonstrate real-world application design.
