@@ -8,23 +8,27 @@ The project demonstrates responsive web design principles, product catalog prese
 
 ---
 
-📸 Project Screenshots
+## 📸 Project Screenshots
 
-Home Page
+### Home Page
 
-"Home Page" (screenshots/home-page.png)
+![Home Page](screenshots/Home-page.png)
 
-Product Catalog
+### Feature Section
 
-"Product Catalog" (screenshots/products-page.png)
+![Feature Section](screenshots/feature-page.png)
 
-Product Details
+### Product Catalog
 
-"Product Details" (screenshots/product-details.png)
+![Product Catalog](screenshots/products-page.png)
 
-Order Interface
+### Product Description Page
 
-"Order Interface" (screenshots/order-page.png)
+![Product Description Page](screenshots/product-description-page.png)
+
+### Order Interface
+
+![Order Interface](screenshots/order-page.png)
 
 ---
 
