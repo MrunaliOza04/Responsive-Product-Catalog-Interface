@@ -64,23 +64,29 @@ The project demonstrates responsive web design principles, product catalog prese
 
 ---
 
-📂 Project Structure
+## 📁 Project Structure
 
+```text
 Responsive-Product-Catalog-Interface
 │
 ├── images/
+│   ├── products/
+│   └── amogh-logo.png
 │
 ├── screenshots/
+│   ├── Home-page.png
+│   ├── feature-page.png
+│   ├── products-page.png
+│   ├── product-description-page.png
+│   └── order-page.png
 │
 ├── index.html
 ├── flower-pot.html
 ├── sp-homes.html
 ├── order.html
-│
-├── style.css
-├── script.js
-│
+├── .gitignore
 └── README.md
+```
 
 ---
 
