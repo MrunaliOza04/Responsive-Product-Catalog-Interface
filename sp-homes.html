@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SP Homes Products</title>
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial,sans-serif;
+            background:#0f0f0f;
+            color:white;
+        }
+
+         h1{
+           text-align:center;
+           color:#ff1493;
+           margin-top:10px;
+           font-size:60px;
+         }
+
+
+        p{
+            text-align:center;
+            font-size:22px;
+            margin-bottom:50px;
+        }
+
+.logo-title{
+    padding:20px 30px;
+}
+
+.logo-title img{
+    height:80px;
+    width:auto;
+}
+
+
+.products-grid{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:50px;
+}
+
+.product-card{
+    width:280px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,20,147,0.3);
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(255,20,147,0.2);
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 40px rgba(255,20,147,0.5);
+}
+
+.details-btn{
+    margin:20px auto;
+    display:block;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:linear-gradient(to right,#ff1493,#ff69b4);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.4s;
+}
+
+.details-btn:hover{
+    transform:scale(1.05);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.product-card:hover img{
+    transform:scale(1.08);
+}
+
+.product-card h3{
+    text-align:center;
+    color:#ff1493;
+    padding:20px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.fade-in{
+    animation:fadeIn 1.5s ease;
+}
+
+
+
+.back-home-btn:hover{
+    transform:scale(1.08);
+
+    box-shadow:0 0 40px rgba(255,20,147,1);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#111;
+    margin-top:50px;
+}
+
+footer h3{
+    color:#ff1493;
+}
+
+.top-ribbon{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+
+    background:linear-gradient(
+            to right,
+            #c71585,
+            #ff1493
+    );
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 0 25px rgba(255,20,147,0.5);
+}
+
+.ribbon-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:white;
+}
+
+.ribbon-logo img{
+
+    height:60px;
+
+    width:auto;
+}
+
+.home-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:bold;
+
+    font-size:22px;
+
+    padding:18px 40px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,0.2);
+
+    box-shadow:0 0 15px rgba(255,255,255,0.2);
+
+    transition:0.3s;
+}
+
+.home-btn:hover{
+
+    transform:scale(1.08);
+
+    background:rgba(255,255,255,0.25);
+}
+
+    </style>
+</head>
+
+<body>
+
+<div class="top-ribbon">
+
+    <div class="ribbon-logo">
+        <img src="images/amogh-logo.png" alt="Amogh Enterprises">
+
+    </div>
+
+    <a href="index.html" class="home-btn">
+        🏠 Home
+    </a>
+
+</div>
+
+
+<h1 class="fade-in">SP Homes Products</h1>
+
+<p class="fade-in">
+    Explore our range of durable and premium SP Homes products.
+</p>
+
+<div class="products-grid fade-in">
+    <div class="product-card">
+        <img src="images/products/Stool(18.5).png" alt="Plastic Stool">
+        <h3>Plastic Stool</h3>
+
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/products/Flower Pot.png" alt="Flower Pot">
+        <h3>Flower Pot</h3>
+
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/products/Kitchen Crate.png" alt="Kitchen Crate">
+        <h3>Kitchen Crate</h3>
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/products/Swing Dustbin.png" alt="Swing Dustbin">
+        <h3>Swing Dustbin</h3>
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/products/Padle Dustbin.png" alt="Padle Dustbin">
+        <h3>Padle Dustbin</h3>
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/products/Air Lift 55 Ltr.png" alt="Air Lift 55 Ltr">
+        <h3>Air Lift</h3>
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/products/Construction(16).png" alt="Construction Tub">
+        <h3>Construction Tub</h3>
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/products/Ghamela(16).png" alt="Gheamela">
+        <h3>Gheamela</h3>
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/products/Soap Tray 2 in 1.png" alt="Soap Tray">
+        <h3>Soap Tray 2 in 1</h3>
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/products/Sup Big.png" alt="Sup Big">
+        <h3>Sup Big</h3>
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+    <div class="product-card">
+        <img src="images/products/Swatch.png" alt="Swatch">
+        <h3>Swatch</h3>
+        <a href="#" class="details-btn">
+            View Details
+        </a>
+    </div>
+
+</div>
+
+<footer>
+
+    <h3>Amogh Enterprises</h3>
+
+    <p>
+        SP Homes Products | Plumbing Products | Gardening Pipes
+    </p>
+
+    <p>
+        Copyright 2026 | Amogh Enterprises
+    </p>
+
+</footer>
+
+</body>
+
+</html>

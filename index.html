@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Amogh Enterprises</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+
+        html{
+        scroll-behavior:smooth;
+    }
+           body{
+        margin:0;
+        font-family:Arial, sans-serif;
+        background-color:#0f0f0f;
+        color:white;
+        animation:fadeIn 1.5s ease;
+    }
+
+    nav{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+
+    background:linear-gradient(
+        to right,
+        #c71585,
+        #ff1493
+    );
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 0 25px rgba(255,20,147,0.5);
+}
+
+   .logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    font-size:28px;
+    font-weight:bold;
+    color:white;
+}
+
+    .logo img{
+        height:70px;
+        width:auto;
+    }
+
+    ul{
+        display:flex;
+
+        list-style:none;
+
+        gap:30px;
+    }
+
+    a{
+        text-decoration:none;
+
+        color:white;
+    }
+
+    li{
+        cursor:pointer;
+
+        transition:0.3s;
+    }
+
+    li:hover{
+        transform:translateY(-3px);
+
+        text-shadow:0 0 10px #ff1493;
+
+        color:#ff1493;
+    }
+
+    .hero{
+        height:90vh;
+
+        background:
+        linear-gradient(rgba(0,0,0,0.7),
+        rgba(0,0,0,0.8)),
+
+        url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1400&auto=format&fit=crop');
+
+        background-size:cover;
+
+        background-position:center;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        align-items:center;
+
+        text-align:center;
+
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:70px;
+
+        margin-bottom:20px;
+
+        color:#ff1493;
+    }
+
+    .hero p{
+        font-size:22px;
+
+        width:60%;
+    }
+
+    .btn{
+        margin-top:30px;
+
+        padding:15px 35px;
+
+        border:none;
+
+        border-radius:40px;
+
+        background:linear-gradient(to right,#ff1493,#ff69b4);
+
+        color:white;
+
+        font-size:18px;
+
+        cursor:pointer;
+
+        transition:0.4s;
+
+        box-shadow:0 0 20px rgba(255,20,147,0.5);
+        display:inline-block;
+        text-decoration:none;
+    }
+
+
+
+    .btn:hover{
+        transform:scale(1.1);
+
+        box-shadow:0 0 40px rgba(255,20,147,1);
+
+        letter-spacing:1px;
+    }
+
+    .products-section{
+        padding:80px 50px;
+
+        text-align:center;
+    }
+
+    .products-section h2{
+        font-size:50px;
+
+        color:#ff1493;
+
+        margin-bottom:50px;
+    }
+
+    .products-container{
+        display:flex;
+
+        justify-content:center;
+
+        gap:30px;
+
+        flex-wrap:wrap;
+    }
+
+    .card{
+        background:rgba(255,255,255,0.05);
+
+        border:1px solid rgba(255,20,147,0.3);
+
+        backdrop-filter:blur(10px);
+
+        padding:30px;
+
+        width:300px;
+
+        border-radius:20px;
+
+        transition:0.4s;
+
+        box-shadow:0 0 20px rgba(255,20,147,0.2);
+    }
+
+    .card:hover{
+        transform:translateY(-10px) scale(1.03);
+
+        box-shadow:0 0 40px rgba(255,20,147,0.5);
+    }
+
+    .card h3{
+        color:#ff1493;
+
+        font-size:28px;
+
+        margin-bottom:20px;
+    }
+
+    .card p{
+        margin-bottom:25px;
+
+        line-height:1.7;
+    }
+    .about-section{
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+        gap:60px;
+
+        padding:100px 50px;
+
+        flex-wrap:wrap;
+    }
+
+    .about-image img{
+        width:350px;
+
+        height:auto;
+
+        object-fit:contain;
+
+        border-radius:20px;
+
+        box-shadow:0 0 40px rgba(255,20,147,0.5);
+
+        transition:0.4s;
+    }
+
+    .about-image img:hover{
+        transform:scale(1.05);
+    }
+
+    .about-content{
+        max-width:500px;
+    }
+
+    .about-content h2{
+        font-size:50px;
+
+        color:#ff1493;
+
+        margin-bottom:25px;
+    }
+
+    .about-content p{
+        line-height:1.8;
+
+        font-size:18px;
+    }
+
+    .whatsapp-btn{
+        position:fixed;
+
+        bottom:30px;
+
+        right:30px;
+
+        background:#ff1493;
+
+        color:white;
+
+        padding:18px 28px;
+
+        border-radius:50px;
+
+        text-decoration:none;
+
+        font-weight:bold;
+
+        box-shadow:0 0 20px rgba(255,20,147,0.6);
+
+        transition:0.4s;
+
+        z-index:1000;
+    }
+
+    .whatsapp-btn:hover{
+        transform:scale(1.1);
+
+        box-shadow:0 0 35px rgba(255,20,147,1);
+    }
+
+    .contact-section{
+        text-align:center;
+
+        padding:100px 20px;
+    }
+
+    .contact-section h2{
+        font-size:50px;
+
+        color:#ff1493;
+
+        margin-bottom:30px;
+    }
+
+    .contact-section p{
+        font-size:20px;
+
+        margin-bottom:20px;
+    }
+
+
+
+    footer{
+        background:#050505;
+
+        text-align:center;
+
+        padding:40px 20px;
+
+        margin-top:50px;
+
+        border-top:1px solid rgba(255,20,147,0.3);
+    }
+
+    footer h3{
+        color:#ff1493;
+
+        font-size:30px;
+
+        margin-bottom:15px;
+    }
+
+    footer p{
+        color:#ccc;
+
+        margin-bottom:10px;
+    }
+
+    @keyframes fadeIn{
+
+        from{
+            opacity:0;
+        }
+
+        to{
+            opacity:1;
+        }
+
+    }
+
+    .reveal{
+        opacity:0;
+
+        transform:translateY(80px);
+
+        animation:revealAnimation 1.5s ease forwards;
+    }
+
+    @keyframes revealAnimation{
+
+        to{
+            opacity:1;
+
+            transform:translateY(0);
+        }
+
+    }
+
+    .card img{
+        width:100%;
+
+        height:220px;
+
+        object-fit:cover;
+
+        border-radius:15px;
+
+        margin-bottom:20px;
+    }
+
+    .featured-products{
+        padding:80px 50px;
+        text-align:center;
+    }
+
+    .featured-products h2{
+        font-size:50px;
+        color:#ff1493;
+        margin-bottom:50px;
+    }
+
+    .featured-container{
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        flex-wrap:wrap;
+    }
+
+    .featured-card{
+        width:250px;
+        background:rgba(255,255,255,0.05);
+        border:1px solid rgba(255,20,147,0.3);
+        border-radius:20px;
+        overflow:hidden;
+        transition:0.4s;
+        box-shadow:0 0 20px rgba(255,20,147,0.2);
+    }
+
+    .featured-card:hover{
+        transform:translateY(-10px);
+        box-shadow:0 0 40px rgba(255,20,147,0.5);
+    }
+
+    .featured-card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .featured-card h3{
+        padding:20px;
+        color:#ff1493;
+    }
+
+    .orbit-showcase{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.orbit-showcase h2{
+    color:#ff1493;
+    font-size:50px;
+    margin-bottom:50px;
+}
+
+.orbit-wrapper{
+    position:relative;
+
+    width:700px;
+    height:700px;
+
+    margin:auto;
+}
+
+.orbit-logo{
+    position:absolute;
+
+    width:180px;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:10;
+
+    border-radius:20px;
+
+    box-shadow:0 0 30px rgba(255,20,147,0.6);
+}
+
+.orbit-circle{
+    position:relative;
+
+    width:100%;
+    height:100%;
+
+}
+
+.planet:hover{
+
+    transform:scale(1.15);
+
+    box-shadow:
+    0 0 25px #ff1493,
+    0 0 50px #ff1493,
+    0 0 80px #ff1493;
+
+    z-index:999;
+}
+
+.planet img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:20px;
+    border:2px solid #ff1493;
+    box-shadow:0 0 25px rgba(255,20,147,0.5);
+    transition:0.4s;
+}
+
+.planet:hover img{
+    transform:scale(1.1);
+
+    box-shadow:
+    0 0 25px #ff1493,
+    0 0 50px #ff1493,
+    0 0 80px #ff1493;
+}
+
+.planet p{
+    margin-top:12px;
+    color:#ff1493;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.planet{
+    position:absolute;
+    text-align:center;
+}
+
+.planet1{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    animation:orbit1 20s linear infinite;
+}
+
+.planet2{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:
+    translate(-50%,-50%)
+    rotate(90deg)
+    translateY(-250px);
+
+    animation:orbit2 20s linear infinite;
+}
+
+.planet3{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:
+    translate(-50%,-50%)
+    rotate(180deg)
+    translateY(-250px);
+
+    animation:orbit3 20s linear infinite;
+}
+
+.planet4{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:
+    translate(-50%,-50%)
+    rotate(270deg)
+    translateY(-250px);
+
+    animation:orbit4 20s linear infinite;
+}
+
+@keyframes orbit1{
+    from{
+        transform:
+        translate(-50%,-50%)
+        rotate(0deg)
+        translateY(-250px)
+        rotate(0deg);
+    }
+
+    to{
+        transform:
+        translate(-50%,-50%)
+        rotate(360deg)
+        translateY(-250px)
+        rotate(-360deg);
+    }
+}
+
+@keyframes orbit2{
+    from{
+        transform:translate(-50%,-50%) rotate(90deg) translateY(-250px) rotate(-90deg);
+    }
+    to{
+        transform:translate(-50%,-50%) rotate(450deg) translateY(-250px) rotate(-450deg);
+    }
+}
+
+@keyframes orbit3{
+    from{
+        transform:translate(-50%,-50%) rotate(180deg) translateY(-250px) rotate(-180deg);
+    }
+    to{
+        transform:translate(-50%,-50%) rotate(540deg) translateY(-250px) rotate(-540deg);
+    }
+}
+
+@keyframes orbit4{
+    from{
+        transform:translate(-50%,-50%) rotate(270deg) translateY(-250px) rotate(-270deg);
+    }
+    to{
+        transform:translate(-50%,-50%) rotate(630deg) translateY(-250px) rotate(-630deg);
+    }
+}
+
+@keyframes orbitRotate{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+<nav>
+
+    <div class="logo">
+        <img src="images/amogh-logo.png" alt="Amogh Enterprises Logo">
+
+        <span>Amogh Enterprises</span>
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+
+</nav>
+
+<section class="hero" id="home">
+
+    <h1>Premium Plumbing & Gardening Solutions</h1>
+
+    <p>
+        Trusted supplier of SP Home Products,
+        plumbing products and high-quality gardening pipes.
+    </p>
+
+    <a href="#products" class="btn">
+        Explore Products
+    </a>
+
+</section>
+
+<section class="about-section reveal" id="about">
+
+    <div class="about-image">
+
+        <img src="images/amogh-logo.png" alt="Amogh Enterprises Logo">
+
+    </div>
+
+    <div class="about-content">
+
+        <h2>About Amogh Enterprises</h2>
+
+        <p>
+            Amogh Enterprises is a trusted supplier of
+            SP Home Products, plumbing products and
+            premium gardening pipes.
+
+            We focus on delivering quality products,
+            customer satisfaction and reliable service.
+        </p>
+
+        <a href="#featured" class="btn">
+            Learn More
+        </a>
+
+    </div>
+
+</section>
+
+<section class="products-section reveal" id="products">
+
+    <h2>
+        Our Products
+    </h2>
+
+    <div class="products-container">
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1589923158776-cb4485d99fd6?q=80&w=1200&auto=format&fit=crop">
+
+            <h3>Gardening Pipes</h3>
+
+            <p>
+                Durable and flexible gardening pipes
+                for homes and farms.
+            </p>
+
+            <button class="btn">
+                View More
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop">
+
+            <h3>Plumbing Products</h3>
+
+            <p>
+                High quality water pipe solutions
+                for residential and commercial use.
+            </p>
+
+            <button class="btn">
+                View More
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop">
+
+            <h3>SP Home Products</h3>
+
+            <p>
+                Trusted home utility products
+                with premium quality.
+            </p>
+
+            <a href="sp-homes.html">
+                <button class="btn">
+                    View More
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="featured-products" id="featured">
+
+    <h2>Featured SP Homes Products</h2>
+
+    <div class="featured-container">
+
+        <div class="featured-card">
+            <img src="images/products/Rectangle 5 Leg patla(11).png" alt="Stool">
+            <h3>Plastic Stool</h3>
+        </div>
+
+        <div class="featured-card">
+            <img src="images/products/Flower Pot.png" alt="Flower Pot">
+            <h3>Flower Pot</h3>
+        </div>
+
+        <div class="featured-card">
+            <img src="images/products/Kitchen Crate.png" alt="Kitchen Crate">
+            <h3>Kitchen Crate</h3>
+        </div>
+
+        <div class="featured-card">
+            <img src="images/products/Swing Dustbin.png" alt="Swing Dustbin">
+            <h3>Swing Dustbin</h3>
+        </div>
+
+    </div>
+
+    <section class="orbit-showcase">
+
+        <h2>Featured Products Orbit</h2>
+
+        <div class="orbit-wrapper">
+
+            <img src="images/amogh-logo.png" class="orbit-logo">
+
+            <div class="orbit-circle">
+
+                <div class="planet planet1">
+                    <img src="images/products/Rectangle 5 Leg patla(11).png">
+                    <p>Plastic Stool</p>
+                </div>
+
+                <div class="planet planet2">
+                    <img src="images/products/Flower Pot.png">
+                    <p>Flower Pot</p>
+                </div>
+
+                <div class="planet planet3">
+                    <img src="images/products/Kitchen Crate.png">
+                    <p>Kitchen Crate</p>
+                </div>
+
+                <div class="planet planet4">
+                    <img src="images/products/Swing Dustbin.png">
+                    <p>Swing Dustbin</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</section>
+
+<section class="contact-section reveal" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        +91 7796029571
+    </p>
+
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        mrunalioza4004@gmail.com
+    </p>
+
+    <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Pune, Maharashtra
+    </p>
+
+    <button class="btn">
+        Contact Now
+    </button>
+
+</section>
+<footer>
+
+    <h3>Amogh Enterprises</h3>
+
+    <p>
+        Trusted supplier of gardening pipes,
+        water pipes and home utility products.
+    </p>
+
+    <p>
+        Copyright 2026 | All Rights Reserved
+    </p>
+
+</footer>
+<a href="https://wa.me/917796029571" class="whatsapp-btn">
+
+    WhatsApp
+
+</a>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Summary</title>
+
+    <style>
+
+        body{
+            margin:0;
+            background:#0f0f0f;
+            color:white;
+            font-family:Arial,sans-serif;
+        }
+
+        .order-container{
+
+            max-width:700px;
+
+            margin:50px auto;
+
+            padding:40px;
+
+            background:rgba(255,255,255,0.05);
+
+            border-radius:20px;
+
+            border:1px solid rgba(255,20,147,0.3);
+        }
+
+        .order-container h1{
+
+            text-align:center;
+
+            color:#ff1493;
+
+            margin-bottom:40px;
+        }
+
+        input,
+        textarea{
+
+            width:100%;
+
+            padding:15px;
+
+            margin-top:10px;
+
+            margin-bottom:20px;
+
+            border:none;
+
+            border-radius:10px;
+
+            font-size:16px;
+        }
+
+        button{
+
+            width:100%;
+
+            padding:15px;
+
+            border:none;
+
+            border-radius:30px;
+
+            background:#ff1493;
+
+            color:white;
+
+            font-size:18px;
+
+            cursor:pointer;
+        }
+
+        button:hover{
+
+            transform:scale(1.02);
+        }
+
+        .top-ribbon{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+
+    background:linear-gradient(
+        to right,
+        #c71585,
+        #ff1493
+    );
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+}
+
+.ribbon-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:bold;
+}
+
+.ribbon-logo img{
+
+    height:60px;
+}
+
+.page-title{
+
+    text-align:center;
+
+    color:#ff1493;
+
+    font-size:55px;
+
+    margin-top:50px;
+
+    margin-bottom:20px;
+}
+
+.home-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    padding:15px 35px;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,0.15);
+
+    transition:0.3s;
+}
+
+.home-btn:hover{
+
+    transform:scale(1.05);
+}
+
+    </style>
+
+</head>
+<body>
+
+<div class="top-ribbon">
+
+    <div class="ribbon-logo">
+
+        <img src="images/amogh-logo.png" alt="Amogh Enterprises">
+
+        <span>Amogh Enterprises</span>
+
+    </div>
+
+    <a href="flower-pot.html" class="home-btn">
+        ← Back
+    </a>
+
+</div>
+
+<div class="order-container">
+
+    <h1>Place Your Order</h1>
+
+    <h3>Product</h3>
+    <p id="productName">Flower Pot</p>
+
+    <h3>Selected Size</h3>
+    <p id="productSize">6 Inch</p>
+
+    <h3>Quantity</h3>
+    <p id="productQty">1</p>
+
+    <input type="text"
+           placeholder="Enter Your Name">
+
+    <input type="text"
+           placeholder="Enter Phone Number">
+
+    <textarea
+            placeholder="Enter Delivery Address">
+    </textarea>
+
+    <button>
+        Submit Order
+    </button>
+
+</div>
+
+</body>
+</html>
