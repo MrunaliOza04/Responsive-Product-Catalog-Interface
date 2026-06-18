@@ -115,7 +115,7 @@ Through this project, I gained practical experience in:
 
 Mrunali Oza
 
-GitHub: https://github.com/MrunaliOza04
+GitHub: https://github.com/MrunaliOza04/Responsive-Product-Catalog-Interface
 
 LinkedIn: https://www.linkedin.com/in/mrunali-oza04
 
