@@ -103,16 +103,13 @@ Through this project, I gained practical experience in:
 
 ---
 
-🚀 Future Enhancements
+## 🚀 Future Enhancements
 
 - Product Search Functionality
-- Product Filtering & Sorting
-- Shopping Cart System
+- Admin Product Management
 - Backend Integration
-- Database Connectivity
+- Database Support
 - User Authentication
-- Admin Dashboard
-- Order Management System
 
 ---
 
